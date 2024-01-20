@@ -12,5 +12,9 @@ Used to grab raw data from websites and other URL-based services.
 [jsconsole](https://www.jsconsole.com)
 This can be used to run JavaScript code.
 # Networks
+[nmap]
+
+[traceroute]
+
 
 # Protocol-Specific
