@@ -17,4 +17,9 @@ $ locate nmap/scrips
 - -A: for OS and version detection.
 - -sC: run common scripts to obtain more information
 - -sV: run version scan and identify the service protocol, application name, and version
+## Scripts
+Gather banner information.
+```
+$ nmap -sV --script=banner <target>
+```
 ## Examples

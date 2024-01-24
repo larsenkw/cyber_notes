@@ -21,3 +21,37 @@ Common Options:
 Example:
 	$ nmap -A –top-ports 10 192.168.0.1
 # Protocol-Specific
+## [SMB](SMB)
+Server Message Block (SMB)
+
+Discover SMB Shares:
+```
+$ nmap --script smb-os-discovery.nse -p<port> <host>
+```
+Grab the OS information using:
+```
+$ nmap -A -p<port> <host>
+```
+### smbclient
+"smbclient" command allows you to interact with SMB shares.
+#### Options
+- -L: retrieve a list of available shares on the host
+- -N: suppress the password prompt
+#### Example
+```
+$ smbclient -N -L \\\\10.129.42.253
+
+# Reveal users
+$ smbclient \\\\10.129.42.253\\users
+
+# Access using a specific user
+smbclient -U bob \\\\10.129.42.253\\users
+
+# You will then see
+Enter WORKGROUP\bob's password: <enter password here>
+Try "help" to get a list of possible commands.
+
+smb: \> ls
+```
+
+You can use 'cd' to access a users folder. Then use 'get' to download files.
