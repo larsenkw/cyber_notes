@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7a63c69870487c92",
+        "id": "70967e2f0e428add",
         "type": "tabs",
         "children": [
           {
-            "id": "f2fe6aadfabea22d",
+            "id": "129128f7d1cc158a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -131,8 +131,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9e3a667218b2cd9a",
+  "active": "129128f7d1cc158a",
   "lastOpenFiles": [
+    "SMB.md",
     "Summary of Tools.md",
     "www.jsconsole.com.md",
     "jsconsole.com.md",

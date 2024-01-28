@@ -21,6 +21,8 @@ Common Options:
 Example:
 	$ nmap -A –top-ports 10 192.168.0.1
 # Protocol-Specific
+## [FTP](ftp)
+
 ## [SMB](SMB)
 Server Message Block (SMB)
 
@@ -32,8 +34,9 @@ Grab the OS information using:
 ```
 $ nmap -A -p<port> <host>
 ```
+This will help you to identify if the system may be vulnerable to certain exploits like EternalBlue.
 ### smbclient
-"smbclient" command allows you to interact with SMB shares.
+"smbclient" command allows you to enumerate and interact with SMB shares.
 #### Options
 - -L: retrieve a list of available shares on the host
 - -N: suppress the password prompt
