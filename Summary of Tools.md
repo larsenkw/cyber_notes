@@ -30,6 +30,8 @@ Discover SMB Shares:
 ```
 $ nmap --script smb-os-discovery.nse -p<port> <host>
 ```
+Use on a port that is running an SMB server. This can be obtained using NMAP.
+
 Grab the OS information using:
 ```
 $ nmap -A -p<port> <host>
